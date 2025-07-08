@@ -1,17 +1,14 @@
 {
   "ops": [
     {
-      "id": "agents",
+      "id": "Code Review Agent",
       "args": {
         "gpu": true,
-        "image": "docker.io/yourusername/agent-challenge:latest",
+        "image": "docker.io/yashksaini19/nosana-codereview-agent:latest",
         "expose": [
           {
             "port": 8080
           }
-        ],
-        "entrypoint": [
-          "/bin/sh"
         ]
       },
       "type": "container/run"
